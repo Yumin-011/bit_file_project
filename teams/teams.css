@@ -1,0 +1,326 @@
+/* 전체 컨테이너 */
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 커버 섹션 */
+.cover-section {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+.profile-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.profile-logo {
+    width: 160px;
+    height: 160px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.profile-details {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.profile-details h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.subtitle {
+    margin: 5px 0 0;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* 상호작용 바 */
+.interaction-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.cheer-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cheer-button {
+    background: linear-gradient(45deg, #ff4081, #7c4dff);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cheer-button i {
+    font-size: 18px;
+    color: #fff700;
+}
+
+.cheer-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cheer-button.cheering {
+    transform: scale(1.1);
+}
+
+.cheer-count {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.like-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ccc;
+    transition: all 0.3s ease;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.like-button.liked {
+    color: #ff4081;
+}
+
+.like-button:hover {
+    transform: scale(1.1);
+}
+
+.like-count {
+    font-size: 18px;
+    color: #666;
+}
+
+.stats {
+    display: flex;
+    gap: 30px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a237e;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 메인 콘텐츠 */
+.main-content {
+    padding: 20px;
+}
+
+/* 뉴스 섹션 */
+.news-section {
+    margin-bottom: 40px;
+}
+
+.news-section h2 {
+    margin-bottom: 20px;
+    color: #1a237e;
+}
+
+.news-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.news-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.news-content h3 {
+    margin: 0 0 10px;
+    color: #1a237e;
+}
+
+.news-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.news-excerpt {
+    color: #333;
+    line-height: 1.5;
+}
+
+/* 방명록 섹션 */
+.guestbook-section {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.guestbook-section h2 {
+    margin-bottom: 20px;
+    color: #1a237e;
+}
+
+.message-form {
+    margin-bottom: 20px;
+}
+
+.message-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.message-form button {
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.message-form button:hover {
+    background: #0e1642;
+}
+
+.message {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.message-author {
+    font-weight: bold;
+    color: #1a237e;
+}
+
+.message-time {
+    color: #666;
+}
+
+.message-content {
+    color: #333;
+    line-height: 1.5;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.back-button i {
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: translateX(-5px);
+}
+
+.message-form input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.message-form input::placeholder {
+    color: #999;
+}
+
+.message-form input:focus {
+    outline: none;
+    border-color: #1a237e;
+    box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.1);
+} 

@@ -1,0 +1,279 @@
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+/* 프로필 컨테이너 */
+.profile-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 커버 섹션 */
+.cover-section {
+    position: relative;
+    height: 350px;
+    margin-bottom: 80px;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    position: absolute;
+    bottom: -60px;
+    left: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.profile-logo {
+    width: 168px;
+    height: 168px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background: white;
+}
+
+.profile-details {
+    margin-bottom: 10px;
+}
+
+.profile-details h1 {
+    font-size: 32px;
+    color: #1c1e21;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #65676b;
+    font-size: 15px;
+}
+
+/* 상호작용 바 */
+.interaction-bar {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #e4e6eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.like-count {
+    color: #65676b;
+    font-size: 15px;
+}
+
+.like-button {
+    background: #e7f3ff;
+    color: #1877f2;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s;
+}
+
+.like-button:hover {
+    background: #dbe7f2;
+}
+
+.like-button.liked {
+    background: #1877f2;
+    color: white;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1c1e21;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #65676b;
+}
+
+/* 메인 콘텐츠 */
+.main-content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* 뉴스 섹션 */
+.news-section h2 {
+    margin-bottom: 20px;
+    color: #1c1e21;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 15px;
+}
+
+.news-content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.news-date {
+    color: #65676b;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.news-excerpt {
+    color: #1c1e21;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* 방명록 섹션 */
+.guestbook-section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.guestbook-section h2 {
+    margin-bottom: 20px;
+    color: #1c1e21;
+}
+
+.message-form {
+    margin-bottom: 20px;
+}
+
+.message-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    resize: none;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.message-form textarea:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+
+#postMessage {
+    background: #1877f2;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#postMessage:hover {
+    background: #166fe5;
+}
+
+.message {
+    border-bottom: 1px solid #e4e6eb;
+    padding: 15px 0;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.message-author {
+    font-weight: 600;
+    color: #1c1e21;
+}
+
+.message-time {
+    color: #65676b;
+    font-size: 13px;
+}
+
+.message-content {
+    color: #1c1e21;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .interaction-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stats {
+        width: 100%;
+        justify-content: space-around;
+    }
+} 

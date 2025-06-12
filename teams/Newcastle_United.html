@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newcastle United - Team Profile</title>
+    <link rel="stylesheet" href="teams.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- 뒤로가기 버튼 -->
+        <a href="/" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            <span>홈으로</span>
+        </a>
+
+        <!-- 커버 이미지 및 프로필 섹션 -->
+        <div class="cover-section">
+            <img src="/profile/newcastle.png" alt="Manchester United Cover" class="cover-image">
+            <div class="profile-info">
+                <img src="/images/new.png" alt="Manchester United Logo" class="profile-logo">
+                <div class="profile-details">
+                    <h1 class="team-name">Newcastle United</h1>
+                    <p class="subtitle">Official Team Page</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 상호작용 섹션 -->
+        <div class="interaction-bar">
+            <div class="cheer-section">
+                <button class="cheer-button">
+                    <i class="fas fa-star"></i>
+                    <span>응원하기</span>
+                    <span class="cheer-count">0</span>
+                </button>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">League Titles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">FA Cups</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1892</span>
+                    <span class="stat-label">Founded</span>
+                </div>
+            </div>
+        </div>
+            
+        <!-- 메인 콘텐츠 -->
+        <div class="main-content">
+            <!-- 뉴스 섹션 -->
+            <div class="news-section">
+                <h2>Latest News</h2>
+                <div class="news-card">
+                    <img src="/news/newnew.png" alt="Team News" class="news-image">
+                    <div class="news-content">
+                        <h3>Newcastle Beat Liverpool to Win Club's First Ever English Carabao Cup</h3>
+                        <p class="news-date">5 hours ago</p>
+                        <p class="news-excerpt">Newcastle secured a 2-1 victory over Liverpool in the 2024-2025 Carabao Cup final held at Wembley Stadium in London.</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="/news/jack.png" alt="Team News" class="news-image">
+                    <div class="news-content">
+                        <h3>Newcastle Show Interest in Loan Signing of Jack Grealish</h3>
+                        <p class="news-date">1 day ago</p>
+                        <p class="news-excerpt">Jack Grealish has been linked with a move to Newcastle United. According to UK's TalkSport, Newcastle are interested in the midfielder and are reportedly considering a loan deal.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 방명록 섹션 -->
+            <div class="guestbook-section">
+                <h2>Fan Messages</h2>
+                <div class="message-form">
+                    <textarea placeholder="Write a message to Newcastle United..." id="messageInput"></textarea>
+                    <button id="postMessage">Post</button>
+                </div>
+                <div class="messages-container">
+                    <!-- 메시지들은 JavaScript로 동적으로 추가됨 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/likes.js"></script>
+    <script type="module" src="/src/comment.js"></script>
+</body>
+</html>
