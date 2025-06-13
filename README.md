@@ -33,3 +33,13 @@
 
 - Frontend: Vanilla JS, HTML, CSS
 - Build Tool: Vite
+
+## 수집한 데이터 항목
+
+- 각 유저들의 팬 비율
+- 가장 많은 관심을 가진 팀 분석
+
+## 수집 결과
+
+![과제 1-2](https://github.com/user-attachments/assets/d2f480f6-de5d-4035-85a7-a6173c8b2443)
+![과제 1-1](https://github.com/user-attachments/assets/6f6e848e-4b5b-4055-92b1-58a5cc6d004a)
